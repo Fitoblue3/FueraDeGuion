@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FueraDeGuion | Publicidad audiovisual en Turrialba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <a href="#inicio">FUERADE<span class="green-txt">GUION</a>
-        <nav>
-            <ul>
+    <header class="nav">
+        <a href="#inicio" class="title-fdg">FUERADE<span class="green-txt">GUION</a>
+        <button class="btn-toggle" id="btnToggle"><span class="material-symbols-outlined">menu</span></button>
+        <nav class="nav-links">
+            <ul class="links">
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#proceso">Cómo trabajamos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <a class="btn btn-green" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20quiero%20cotizar%20un%20video%20publicitario." target="_blank" rel="noopener">Cotizar ahora</a>
     </header>
     <main>
         <section class="hero" id="inicio">
             <div class="wrap">
-                <div><span class="dot"></span><p class="green-txt">PUBLICIDAD AUDIOVISUAL · TURRIALBA, COSTA RICA</p></div>
+                <div class="eyebrow"><span class="dot"></span><p class="green-txt">PUBLICIDAD AUDIOVISUAL · TURRIALBA, COSTA RICA</p></div>
                 <h1>Tu negocio merece<br><span class="green-txt">estar en pantalla</span></h1>
                 <p>Creamos videos publicitarios con personalidad para pequeños emprendimientos que quieren destacar en redes sociales. Tu historia, tu producto y tu negocio, contados <b>FueraDeGuion</b>.</p>
                 <div class="hero-actions">
-                    <a class="btn btn-green" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20quiero%20cotizar%20un%20video%20publicitario." target="_blank" rel="noopener">Hablemos de tu proyecto</a>
-                    <a clas="btn btn-transparent" href="#portafolio">Explorar demos</a>
+                    <a class="btn btn-green" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20quiero%20cotizar%20un%20video%20publicitario." target="_blank" rel="noopener">Hablemos de tu proyecto<span class="material-symbols-outlined">arrow_outward</span></a>
+                    <a class="btn btn-transparent" href="#portafolio">Explorar demos<span class="material-symbols-outlined">arrow_cool_down</span></a>
                 </div>
                 <div class="hero-foot">
-                    <p>Videos para redes</p>
-                    <p>Grabación y edición</p>
-                    <p>Ideas con personalidad</p>
+                    <p><span class="material-symbols-outlined">asterisk</span>Videos para redes</p>
+                    <p><span class="material-symbols-outlined">asterisk</span>Grabación y edición</p>
+                    <p><span class="material-symbols-outlined">asterisk</span>Ideas con personalidad</p>
                 </div>
                 <div class="hero-cards">
-                    <div class="card">
+                    <div class="card effect-card">
                         <p class="green-txt">01 / IDEA</p>
                         <p class="strong-txt">Una historia que engancha</p>
                         <p class="little-txt">Concepto, guion y enfoque creativo.</p>
                     </div>
-                    <div class="card">
+                    <div class="card effect-card">
                         <p class="green-txt">02 / PRODUCCIÓN</p>
                         <p class="strong-txt">Detalles que se sienten</p>
-                        <p class="little-txt">Grabación, lux y composición.</p>
+                        <p class="little-txt">Grabación, luz y composición.</p>
                     </div>
-                    <div class="card">
+                    <div class="card effect-card">
                         <p class="green-txt">03 / EDICIÓN</p>
                         <p class="strong-txt">Listo para compartir</p>
                         <p class="little-txt">Ritmo, sonido y formato vertical.</p>
@@ -53,21 +56,24 @@
             </div>
         </section>
 
-        <section id="servicios">
+        <section class="servicios" id="servicios">
             <div class="wrap">
-                <p class="green-txt">QUÉ HACEMOS</p>
+                <p class="green-txt title-green">QUÉ HACEMOS</p>
                 <h2>Tu idea. Nuestra cámara.<br><span class="green-txt">Una historia distinta.</span> </h2>
                 <p>Producción audiovisual pensada para mostrar lo mejor de tu negocio y conectar con las personas que podrían convertirse en tus clientes.</p>
                 <div class="servicios-cards">
                     <div class="card">
+                        <span class="material-symbols-outlined">motion_play</span>
                         <h3>Videos publicitarios</h3>
                         <p>Videos cortos para presentar productos, promociones, servicios y novedades de tu emprendimiento.</p>
                     </div>
                     <div class="card">
+                        <span class="material-symbols-outlined">edit_note</span>
                         <h3>Grabación y edición</h3>
                         <p>Planos cuidados, montaje dinámico, música adecuada, textos y versiones listas para redes sociales.</p>
                     </div>
                     <div class="card">
+                        <span class="material-symbols-outlined">brush</span>
                         <h3>Contenido creativo</h3>
                         <p>Ideas visuales con personalidad para que tu marca se diferencie y tenga algo interesante que contar.</p>
                     </div>
@@ -75,10 +81,10 @@
             </div>
         </section>
         
-        <section id="portafolio">
+        <section class="portafolio" id="portafolio">
             <div class="wrap">
-                <p class="green-txt">PORTAFOLIO</p>
-                <h2>Ideas que pronto <br><span class="green-txt">verás ena cción</span></h2>
+                <p class="green-txt title-green">PORTAFOLIO</p>
+                <h2>Ideas que pronto <br><span class="green-txt">verás en acción</span></h2>
                 <p>Estamos preparando esta vitrina con trabajos seleccionados. ¿Tienes un negocio? Podemos crear la próxima pieza contigo.</p>
                 <div class="portafolio-grid">
                     <div class="video">Video 1</div>
@@ -88,12 +94,12 @@
             </div>
         </section>
 
-        <section id="proceso">
+        <section class="proceso" id="proceso">
             <div class="wrap">
-                <p class="green-txt">CÓMO TRABAJAMOS</p>
+                <p class="green-txt title-green">CÓMO TRABAJAMOS</p>
                 <h2>De la idea al <span class="green-txt">play</span></h2>
                 <p>Un proceso sencillo, pensado para que puedas concentrarte en tu negocio mientras creamos una pieza audiovisual para tu marca.</p>
-                <div class="process">
+                <div class="process-grid">
                     <div class="step">
                         <p class="green-txt">01</p>
                         <h3>Nos contás tu idea</h3>
@@ -122,29 +128,45 @@
             <div class="wrap container-anuncio">
                 <h2>Tu próximo anuncio <br>empieza con una idea</h2>
                 <p>Contanos qué hace especial a tu emprendimiento y pensemos una forma creativa de mostrarlo.</p>
-                <a class="btn btn-green" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20quiero%20cotizar%20un%20video%20publicitario." target="_blank" rel="noopener">Crear mi video</a>
+                <a class="btn btn-black" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20quiero%20cotizar%20un%20video%20publicitario." target="_blank" rel="noopener">Crear mi video <span class="material-symbols-outlined">arrow_outward</span></a>
             </div>
         </section>
 
-        <section id="contacto">
+        <section class="contacto" id="contacto">
             <div class="wrap">
-                <p class="green-txt">CONTACTO</p>
-                <h3>Hgamos algo <span class="green-txt">diferente</span></h3>
+                <p class="green-txt title-green">CONTACTO</p>
+                <h2>Hagamos algo <span class="green-txt">diferente</span></h2>
                 <p>Estamos en Turrialba, Costa Rica. Escribinos para consultar disponibilidad y recibir una cotización según las necesidades de tu negocio.</p>
                 <div class="contacto-grid">
                     <div class="contacto-box">
                         <h3>Hablmeos de tu proyecto</h3>
-                        <p>Contanos qué querés promocionar. Te responderemos para conocer los detalles y preparar una propuesta.</p>
-                        <a class="btn" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20quiero%20consultar%20por%20sus%20servicios." target="_blank" rel="noopener">Escribir por WhatsApp</a>
-                        <div class="contact-line"><span class="green-txt"><b>WhatsApp</b></span> <p>+506 6485-0630</p></div>
-                        <div class="contact-line"><span class="green-txt"><b>Ubicación</b></span><p>Turrialba, Costa Rica</p></div>
+                        <p>Contanos qué querés promocionar. Te responderemos para conocer los detalles y preparar una propuesta.</p>            
+                        <div class="contacto-line">
+                            <span class="green-txt"><b>WhatsApp</b></span>
+                            <p>+506 6485-0630</p>
+                            <a class="btn btn-social" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20quiero%20consultar%20por%20sus%20servicios." target="_blank" rel="noopener"><i class="bi bi-whatsapp"><span class="material-symbols-outlined">arrow_outward</span></i></a>
+                        </div>
+                        <div class="contacto-line">
+                            <span class="green-txt"><b>Instagram</b></span>
+                            <p>@fuera.deguion19</p>
+                            <a class="btn btn-social" href="https://www.instagram.com/fuera.deguion19?mdxt=MWI0a2NkbmFmcDhkNw==" target="_blank" rel="noopener"><i class="bi bi-instagram"><span class="material-symbols-outlined">arrow_outward</span></i></a>
+                        </div>
+                        <div class="contacto-line">
+                            <span class="green-txt"><b>Tik Tok</b></span>
+                            <p>@solis_744k</p>
+                            <a class="btn btn-social" href="https://www.tiktok.com/@solis_744k?_r=1&_t=ZS-9Amf4XsxfdM" target="_blank" rel="noopener"><i class="bi bi-tiktok"><span class="material-symbols-outlined">arrow_outward</span></i></a>
+                        </div>
+                        <div class="contacto-line">
+                            <span class="green-txt"><b>Ubicación</b></span>
+                            <p>Turrialba, Costa Rica</p>
+                        </div>
                     </div>
-                    <div class="contact-box">
+                    <div class="contacto-box">
                         <h3>Antes de escribirnos</h3>
                         <p>Para cotizar más rápido, podés contarnos:</p>
-                        <div class="contact-line"><span class="green-txt"><b>Tu negocio</b></span><p>Nombre y tipo de emprendimiento</p></div>
-                        <div class="contact-line"><span class="green-txt"><b>Tu idea</b></span><p>Producto, servicio o promoción</p></div>
-                        <div class="contact-line"><span class="green-txt"><b>Tu objetivo</b></span><p>Presentar, promocionar o lanzar algo</p></div></div>
+                        <div class="contacto-line"><span class="green-txt"><b>Tu negocio</b></span><p>Nombre y tipo de emprendimiento</p></div>
+                        <div class="contacto-line"><span class="green-txt"><b>Tu idea</b></span><p>Producto, servicio o promoción</p></div>
+                        <div class="contacto-line"><span class="green-txt"><b>Tu objetivo</b></span><p>Presentar, promocionar o lanzar algo</p></div></div>
                     </div>
                 </div>
             </div>
@@ -153,11 +175,16 @@
 
     <footer>
         <div class="wrap footerin">
-            <a class="brand" href="#inicio">FUERADE<span class="green-txt">GUION</span></a>
-            <p>Publicidad audiovisual para pequeños emprendimientos.</p>
-            <p>© 2026 FueraDeGuion · Turrialba, Costa Rica</p>
+            <div class="footer-1">
+                <a class="title-fdg" href="#inicio">FUERADE<span class="green-txt">GUION</span></a>
+                <p>Publicidad audiovisual para pequeños emprendimientos.</p>
+            </div>
+            <div class="footer-2">
+                <p>© 2026 FueraDeGuion · Turrialba, Costa Rica</p>
+                <p>Desarrollado por F-Blue Studios</p>
+            </div>
         </div>
     </footer>
-     <a class="contacto-flotante" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20vi%20su%20pagina%20web." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WhatsApp</a>
+    <a class="contacto-flotante btn" href="https://wa.me/50664850630?text=Hola%20FueraDeGuion%2C%20vi%20su%20pagina%20web." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="bi bi-whatsapp"></i></a>
 </body>
 </html>
