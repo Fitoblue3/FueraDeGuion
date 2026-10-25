@@ -123,7 +123,16 @@ img {
 
 .links {
     display: flex;
-    gap:10px
+    gap: 10px;
+}
+
+.links li:hover{
+    transition: all 0.2s ease;
+}
+
+.links li:hover{
+    color: var(--green);
+    text-decoration: underline;
 }
 
 /*inicio*/
@@ -421,11 +430,13 @@ img {
 .btn-social {
     font-size: 1rem;
     padding: 0;
+    font-weight: normal;
 }
 
 
 .btn-social:hover{
-    color: var(--green)
+    color: var(--green);
+    transition: all 0.2s ease;
 }
 
 .btn-social .material-symbols-outlined{
@@ -463,6 +474,18 @@ footer .wrap {
     margin-top: 10px;
 }
 
+.fblue-studios {
+    display: flex;
+    align-items: center;
+}
+
+.fblue-studios img{
+    position: relative;
+    right: 10px;;
+    width: 65px;
+    height: 65px;
+}
+
 .contacto-flotante {
     display: flex;
     justify-content: center;
@@ -494,9 +517,17 @@ footer .wrap {
     .btn-toggle{
         display: none;
     }
+
+    .nav-links{
+        display: flex;
+    }
 }
 
 @media (min-width: 1024px) {
+
+    .card:hover{
+        transform: translateY(-2px);
+    }
 
     .hero-cards {
         grid-template-columns: repeat(3, 1fr);
