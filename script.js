@@ -17,3 +17,21 @@ menuItems.forEach(link => {
         toggleIcon.textContent = 'menu';
     });
 });
+
+revealOnScroll = () => {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementoTop = reveals[i].getBoundingClientRect().top;
+
+        var isDesktop = window.innerWidth > 768;
+
+        var elementVisible = isDesktop ? 350 : 150;
+        
+
+        if (elementoTop < windowHeight - elementVisible) reveals[i].classList.add('active');
+    }
+}
+
+window.addEventListener('scroll', revealOnScroll);

@@ -91,6 +91,17 @@ img {
     padding: 50px 0;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*header*/
 
 .nav {
@@ -607,7 +618,7 @@ footer .wrap {
 @media (min-width: 1400px) {
 
     .hero .wrap {
-        height: 90vh;
+        height: 100vh;
     }
 
     .servicios .wrap {
