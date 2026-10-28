@@ -546,6 +546,26 @@ footer .wrap {
     .nav-links{
         display: flex;
     }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: auto;
+        height: auto;
+        z-index: auto;
+        transition: none;
+        background: none;
+        padding: 20px;
+    }
+
+    .links {
+        flex-direction: row;
+    }
+
+    .links a {
+        font-size: var(--p-size);
+    }
 }
 
 @media (min-width: 1024px) {
